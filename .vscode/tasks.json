@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\mingw7\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"--std=c++17",
+				"-o",
+				"-DCMAKE_CXX_FLAGS=-DDISABLE_STD_FILESYSTEM=1",
+				// "-IC:\\Rishi\\projects\\bioprogram\\boost_1_76_0\\libs\\",
+				"-lstdc++fs",
+				//"${fileDirname}\\${fileBasenameNoExtension}.exe",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\mingw7\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
